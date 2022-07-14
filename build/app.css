@@ -184,7 +184,6 @@ h2 {
 .info-card .card-content span {
     display: block;
     font-size: 4.5rem;
-    margin: 3rem 0 0 0;
     font-weight: 300;
 }
 .info-card .card-content p {
@@ -363,6 +362,9 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+    }
+    .info-card .card-content span {
+        margin: 3rem 0 0 0;
     }
 }
 

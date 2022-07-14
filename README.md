@@ -25,6 +25,9 @@ Los usuarios deben ser capaces de:
 
 ### Captura de pantalla
 
+![image](https://user-images.githubusercontent.com/108622508/179079562-4c9f0275-5277-416f-85b2-8cd719d72c70.png)
+
+![image](https://user-images.githubusercontent.com/108622508/179080316-f0c8e936-553b-41e2-94de-07ce3ffd2723.png)
 
 
 ### Enlaces

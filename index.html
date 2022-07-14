@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="description" content="Desafio TIME TRACKING DASHBOARD MAIN | FRONTEND MENTOR 1 JaleXDesigN">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  
+    <link rel="preload" href="build/normalize.css" as="style" >
+    <link rel="stylesheet" href="build/normalize.css">
+    
+    <link rel="preload" href="build/app.css" as="style" >
+    <link rel="stylesheet" href="build/app.css">
+    <title>Frontend Mentor | Time tracking dashboard</title>  
+</head>
+
+<body>
+    <main class="contenedor seccion-cards">
+        <div class="user-card">
+            <div class="user-content">
+                <img class="user-img" src="images/image-jeremy.png" alt="Imagen de usuario">
+                <div class="user-info">
+                    <span>Report for</span>
+                    <h1>Jeremy Robson</h1>
+                </div>
+            </div>
+            <ul>
+                <li> <button id="Daily" class="options" onclick="cambiarCard('daily')">Daily</button>  </li>
+                <li> <button id="Weekly" class="options active" onclick="cambiarCard('weekly')">Weekly</button>  </li>
+                <li> <button id="Monthly" class="options" onclick="cambiarCard('monthly')">Monthly</button>  </li>
+            </ul>
+        </div>
+
+        <div class="cards-secundarias">
+            <div class="card card1">
+                <div class="icon-top-card">
+                    <img class="icon-top"  src="images/icon-work.svg" alt="Icono Top Card 1">
+                </div>
+                <div class="info-card">
+                    <div class="card-content">
+                        <div class="top-content">
+                            <h2 class="title">Work</h2>
+                            <img class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="Icono Mostrar Mas">
+                        </div>
+                        <div class="timeframes">
+                            <span class="time1">32hrs</span>
+                            <p class="time2"> Last Week - 36hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--FIN DE CARD-->
+
+            <div class="card card2">
+                <div class="icon-top-card">
+                    <img class="icon-top" src="images/icon-play.svg" alt="Icono Top Card 2">
+                </div>
+                <div class="info-card">
+                    <div class="card-content">
+                        <div class="top-content">
+                            <h2 class="title">Play</h2>
+                            <img class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="Icono Mostrar Mas">
+                        </div>
+                        <div class="timeframes">
+                            <span class="time1">10hrs</span>
+                            <p class="time2"> Last Week - 8hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--FIN DE CARD-->
+
+            <div class="card card3">
+                <div class="icon-top-card">
+                    <img class="icon-top" src="images/icon-study.svg" alt="Icono Top Card 3">
+                </div>
+                <div class="info-card">
+                    <div class="card-content">
+                        <div class="top-content">
+                            <h2 class="title">Study</h2>
+                            <img class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="Icono Mostrar Mas">
+                        </div>
+                        <div class="timeframes">
+                            <span class="time1">4hrs</span>
+                            <p class="time2"> Last Week - 7hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--FIN DE CARD-->
+
+            <div class="card card4">
+                <div class="icon-top-card">
+                    <img class="icon-top" src="images/icon-exercise.svg" alt="Icono Top Card 4">
+                </div>
+                <div class="info-card">
+                    <div class="card-content">
+                        <div class="top-content">
+                            <h2 class="title">Exercise</h2>
+                            <img class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="Icono Mostrar Mas">
+                        </div>
+                        <div class="timeframes">
+                            <span class="time1">4hrs</span>
+                            <p class="time2"> Last Week - 5hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--FIN DE CARD-->
+
+            <div class="card card5">
+                <div class="icon-top-card">
+                    <img class="icon-top" src="images/icon-social.svg" alt="Icono Top Card 5">
+                </div>
+                <div class="info-card">
+                    <div class="card-content">
+                        <div class="top-content">
+                            <h2 class="title">Social</h2>
+                            <img class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="Icono Mostrar Mas">
+                        </div>
+                        <div class="timeframes">
+                            <span class="time1">5hrs</span>
+                            <p class="time2"> Last Week - 10hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--FIN DE CARD-->
+
+            <div class="card card6">
+                <div class="icon-top-card">
+                    <img class="icon-top" src="images/icon-self-care.svg" alt="Icono Top Card 6">
+                </div>
+                <div class="info-card">
+                    <div class="card-content">
+                        <div class="top-content">
+                            <h2 class="title">Self Care</h2>
+                            <img class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="Icono Mostrar Mas">
+                        </div>
+                        <div class="timeframes">    
+                            <span class="time1">2hrs</span>
+                            <p class="time2"> Last Week - 10hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--FIN DE CARD-->
+
+        </div>
+
+    </main>
+
+    <footer>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Jonathan Holguin | JaleXDesigN</a>.
+    </footer>
+     
+<script src="build/app.js"></script>
+    
+</body>
+</html>
